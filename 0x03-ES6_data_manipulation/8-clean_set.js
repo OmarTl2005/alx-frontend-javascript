@@ -10,7 +10,7 @@ export default function cleanSet(set, startString) {
   }
 
   set.forEach((element) => {
-    if (element.startsWith(startString)) {
+    if (element && element.startsWith(startString)) {
       list.push(element.slice(startString.length));
     }
   });
